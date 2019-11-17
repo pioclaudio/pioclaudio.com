@@ -2,26 +2,40 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152607750-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-152607750-1');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Pio Claudio</title>
+    <title>Pio Claudio</title>
     <meta property="og:image" content="">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
-        <div class="container"><a class="navbar-brand logo" href="#">Pio Claudio</a><button class="navbar-toggler" data-toggle="collapse"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+        <div class="container"><a class="navbar-brand logo" href="#">Pio Claudio</a></div>
     </nav>
-    <main class="page lanidng-page">
+    <main class="page landing-page">
         <section class="portfolio-block block-intro">
             <div class="container">
-                <div class="avatar" style="background-image: url(&quot;assets/img/torontominimetro.png&quot;);filter: contrast(100%);"></div>
+                <div class="avatar">
+                </div>
                 <div class="about-me">
-                    <p>Hello! I am <strong>Pio Claudio</strong>. I have passion for realtime visualization of maps and 3D data.</p>
+                    <p>Hello! I am <strong>Pio Claudio</strong>. I have passion for realtime visualization of maps and
+                        3D data.</p>
                 </div>
             </div>
         </section>
@@ -35,7 +49,37 @@
                     <div class="col-md-12 col-lg-5">
                         <div class="portfolio-laptop-mockup">
                             <div class="screen">
-                                <div class="screen-content" style="background-image: url(&quot;assets/img/ttcbusdelay.png&quot;);"></div>
+                                <div class="carousel slide" data-ride="carousel" id="carousel-1">
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item dark">
+                                            <a href="https://pioclaudio.github.io/distortedslippymap/"
+                                                data-toggle="tooltip" title="Distorted Slippy Map">
+                                                <img class="w-100 d-block"
+                                                    src="assets/img/projects/distortedslippymap.png"
+                                                    alt="Distorted Slippy Map"></a></div>
+                                        <div class="carousel-item active">
+                                            <a href="https://pioclaudio.github.io/esriappchallenge/"
+                                                data-toggle="tooltip" title="SUN Urban Network Analysis"><img
+                                                    class="w-100 d-block" src="assets/img/projects/sun.png"
+                                                    alt="SUN Urban Network Analysis"></a></div>
+                                        <div class="carousel-item">
+                                            <a href="https://pioclaudio.github.io/ttcbusdelay/" data-toggle="tooltip"
+                                                title="TTC Realtime Bus Delay"><img class="w-100 d-block"
+                                                    src="assets/img/projects/ttcbusdelay.png"
+                                                    alt="TTC Realtime Bus Delay"></a></div>
+                                    </div>
+                                    <div><a class="carousel-control-prev" href="#carousel-1" role="button"
+                                            data-slide="prev"><span class="carousel-control-prev-icon"></span><span
+                                                class="sr-only">Previous</span></a><a class="carousel-control-next"
+                                            href="#carousel-1" role="button" data-slide="next"><span
+                                                class="carousel-control-next-icon"></span><span
+                                                class="sr-only">Next</span></a></div>
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel-1" data-slide-to="0"></li>
+                                        <li data-target="#carousel-1" data-slide-to="1" class="active"></li>
+                                        <li data-target="#carousel-1" data-slide-to="2"></li>
+                                    </ol>
+                                </div>
                             </div>
                             <div class="keyboard"></div>
                         </div>
@@ -49,7 +93,10 @@
                     <div class="col-md-12 col-lg-5">
                         <div class="portfolio-laptop-mockup">
                             <div class="screen">
-                                <div class="screen-content" style="background-image: url(&quot;assets/img/gaitvis.png&quot;);"></div>
+                                <a href="https://pioclaudio.github.io/gaitvis/" data-toggle="tooltip" title="GaitVis">
+                                    <div class="screen-content gaitvis">
+                                    </div>
+                                </a>
                             </div>
                             <div class="keyboard"></div>
                         </div>
@@ -71,7 +118,10 @@
                     <div class="col-md-12 col-lg-5">
                         <div class="portfolio-laptop-mockup">
                             <div class="screen">
-                                <div class="screen-content" style="background-image: url(&quot;assets/img/issum.png&quot;);"></div>
+                                <a href="http://elderlab.yorku.ca/~issum/video/20180803_Colonnade.mp4"
+                                    data-toggle="tooltip" title="ISSUM Pedestrian Analysis">
+                                    <div class="screen-content issum"></div>
+                                </a>
                             </div>
                             <div class="keyboard"></div>
                         </div>
@@ -80,14 +130,19 @@
             </div>
         </section>
     </main>
-    <footer class="page-footer" style="height: 100px;padding-top: 0px;padding-bottom: 0px;">
+    <footer class="page-footer">
         <div class="container">
-            <div class="social-icons" style="margin-top: 10;margin-bottom: 0;"><small>me@pioclaudio.com</small></div>
-            <div class="social-icons" style="margin-top: 0px;"><a href="https://github.com/pioclaudio"><i class="icon ion-social-github"></i></a><a href="https://bshiro.github.io/"><i class="icon ion-social-github-outline"></i></a><a href="https://www.linkedin.com/in/pioclaudio/"><i class="icon ion-social-linkedin"></i></a></div>
+            <div class="email"><a href="mailto:me@pioclaudio.com">me@pioclaudio.com</a></div>
+            <div class="social-icons">
+                <a href="https://github.com/pioclaudio"><i class="icon ion-social-github"></i></a>
+                <a href="https://bshiro.github.io/"><i class="icon ion-social-github-outline"></i></a>
+                <a href="https://www.linkedin.com/in/pioclaudio/"><i class="icon ion-social-linkedin"></i></a></div>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
 
 </html>
