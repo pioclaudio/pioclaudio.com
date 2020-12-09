@@ -3,13 +3,6 @@
     filter: contrast(100%);
 }
 
-.gaitvis {
-    background-image: url("./img/projects/gaitvis.png");
-}
-.issum {
-    background-image: url("./img/projects/issum.png");
-}
-
 .dark {
     filter: brightness(80%);
 }
